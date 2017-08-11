@@ -1,0 +1,32 @@
+
+    .icon {
+      background-image: url('../images/sprite.png');
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .icon {
+      background-image: url('../images/sprite@2x.png');
+      background-size: 27px 88px;
+    }
+    }
+
+  .icon-arrow-left {
+    background-position: -0px -0px;
+    width: 12px;
+    height: 14px;
+  }
+  .icon-arrow-right {
+    background-position: -0px -14px;
+    width: 12px;
+    height: 14px;
+  }
+  .icon-back {
+    background-position: -0px -28px;
+    width: 16px;
+    height: 24px;
+  }
+  .icon-envelope {
+    background-position: -0px -52px;
+    width: 27px;
+    height: 36px;
+  }

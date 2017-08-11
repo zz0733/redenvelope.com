@@ -1,0 +1,298 @@
+@charset "UTF-8";
+@import 'icon',
+'btn',
+"mixin",
+'form',
+'reset',
+'public';
+
+body {
+    padding-top: 40px;
+}
+
+/* 头部 */
+
+.m-header {
+    height: 40px;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+     background: $mainColor;
+    z-index: 9999;
+    h1 {
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+    }
+}
+
+
+.m-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        font-size: 0;
+        padding: 0 10px;
+    }
+    i {
+        color: #fff;
+        font-size: 22px;
+        vertical-align: middle;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 红包牛牛 */
+
+.m-sent-envelope {
+    padding-top: 20px;
+    background: #fff;
+    .vt {
+        vertical-align: top;
+    }
+    .item {
+        padding: 0 15px;
+        margin-bottom: 20px;
+        .head {
+            margin-right: 10px;
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                overflow: hidden;
+            }
+        }
+        .text {
+
+            h3 {
+                color: rgb(146, 146, 146);
+                font-weight: 400;
+                font-size: 16px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
+        .envelope {
+            width: 180px;
+        }
+        .envelope-hd {
+            background-color: rgb(255, 161, 85);
+            border-radius: 4px 4px 0 0;
+            padding: 10px;
+            position: relative;
+            padding-left: 47px;
+            .icon-arrow-right,.icon-arrow-left {
+                color: rgb(255, 161, 85);
+                position: absolute;
+
+                top: 50%;
+                margin-top: -7px;
+            }
+            .icon-envelope {
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                margin-top: -18px;
+                transform: scale(1.2);
+            }
+            h4 {
+                color: #fff;
+                font-size: 18px;
+                line-height: 24px;
+                height: 24px;
+                overflow: hidden;
+            }
+            p {
+                font-size: 16px;
+                color: #fff;
+                line-height: 22px;
+                height: 22px;
+                overflow: hidden;
+            }
+        }
+        .envelope-bd {
+            border-radius: 0 0 4px 4px;
+            color: rgb(146, 146, 146);
+            box-shadow: 0 1px 9px rgba(204, 112, 38, 0.14);
+
+            height: 24px;
+            line-height: 24px;
+            overflow: hidden;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
+    .gained-envelope {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 10px;
+        p {
+            display: inline-block;
+            background-color: rgb(233, 233, 233);
+            border-radius: 17px;
+            line-height: 34px;
+            padding: 0 15px;
+        }
+        span {
+            color: $mainColor;
+        }
+    }
+    .item-left,
+    .item-right {
+        display: inline-block;
+    }
+    .user-other {
+        .icon-arrow-left {
+            left: -10px;
+            transform:scale(1.4);
+        }
+    }
+    .user-self {
+        .head {
+            margin-right: 0;
+            margin-left: 10px;
+        }
+        .text {
+            h3 {
+                text-align: right;
+            }
+        }
+        .icon-arrow-right {
+            right: -11px;
+           transform:scale(1.4);
+        }
+    }
+    .best-luck {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 10px;
+        .wrap {
+            display: inline-block;
+            background-color: rgb(233, 233, 233);
+            border-radius: 17px;
+            line-height: 22px;
+            padding: 6px 15px;
+        }
+        span {
+            color: $mainColor;
+        }
+        i {
+            color: rgb(62, 143, 52);
+        }
+    }
+    .end-envelope{
+        text-align: center;color: rgb(102, 102, 102);
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.m-envelope-notice {
+    background: #f9f9f9;
+    padding: 10px 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.m-envelope-notice-hd {
+    p {
+        span {
+            background: #fff;
+            display: inline-block;
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+    }
+    .pulic {
+        i {
+            color: rgb(253, 186, 69);
+        }
+    }
+    .friend {
+        i {
+            color: rgb(105, 169, 224);
+        }
+    }
+    .system {
+        color: $mainColor;
+    }
+}
+
+.m-envelope-notice-bd {
+    margin-top: 10px;
+    input {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(198, 198, 198);
+        border-radius: 20px;
+        height: 40px;
+        padding: 10px 15px;
+        line-height: 18px;
+    }
+    .msg {
+        background-color: rgb(213, 213, 213);
+        border-radius: 4px;
+        padding: 0 10px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 5px;
+        i {
+            font-size: 26px;
+            color: #fff;
+        }
+    }
+    .envelope {
+        a {
+            display: block;
+            background-color: rgb(253, 98, 68);
+            border: 1px solid rgb(249, 62, 25);
+            border-radius: 4px;
+            padding: 0 10px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}
+
+.m-sent-envelope-btn{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+     a {
+            display: inline-block;
+            background-color: rgb(253, 98, 68);
+            border: 1px solid rgb(249, 62, 25);
+            border-radius: 4px;
+         
+            padding: 0 20px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+}

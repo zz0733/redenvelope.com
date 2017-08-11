@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import "mixin";
+
+body {
+    padding-top: 40px;
+}
+
+
+
+/* 头部 */
+
+.m-header {
+    height: 40px;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+     background: $mainColor;
+    z-index: 9999;
+    h1 {
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+    }
+}
+
+.m-user {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        font-size: 0;
+        padding: 0 15px;
+    }
+    i {
+        color: #fff;
+        font-size: 24px;
+    }
+}
+
+.m-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        font-size: 0;
+        padding: 0 10px;
+    }
+    i {
+        color: #fff;
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
